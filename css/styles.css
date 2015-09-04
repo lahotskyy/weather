@@ -78,13 +78,17 @@ header div {
     border: 1px solid black;
     clear: both;
     position: relative;
-    left: 80px;
+    left: 40px;
     top: 50px;
     background: #CACACA;
     border-radius: 10px;
 }
 
-.day {
+#today div {
+     display: inline-block;
+}
+
+.day-today {
     position: relative;
     top: 30px;
     font: 30px 'Open+Sans',  sans-serif;
@@ -93,7 +97,7 @@ header div {
     height: 40px;
 }
 
-.icon {
+.icon-today {
     position: relative;
     left: 10px;
     top: 30px;
@@ -101,7 +105,12 @@ header div {
     height: 100px;
 }
 
-.temp {
+#today .icon-today img {
+    width: 140px;
+    height: 100px;
+}
+
+.temp-today {
     position: relative;
     left: 20px;
     top: 30px;
@@ -111,10 +120,10 @@ header div {
     font: 64px 'Open+Sans',  sans-serif;
 }
 
-.cond, .wind, .hum {
+.cond-today, .wind-today, .hum-today {
     position: relative;
     left: 20px;
-    top: 20px;
+    top: 30px;
     width: 260px;
     height: 40px;
     text-align: left;
@@ -128,3 +137,65 @@ header div {
 }
 
 /* Формат погодного вікна для наступного тижня */
+
+#forecast {
+    width: 1000px;
+    height: 400px;
+    position: relative;
+    left: 400px;
+    top: -350px;
+}
+
+
+#day1, #day2, #day3, #day4 {
+    width: 200px;
+    height: 400px;
+    border: 1px solid black;
+    position: relative;
+    background: #CACACA;
+    border-radius: 10px;
+    display: inline-block;
+    left: 20px;
+}
+
+
+.day {
+    position: relative;
+    top: 30px;
+    font: 30px 'Open+Sans',  sans-serif;
+    text-align: center;
+    width: 140px;
+    height: 140px;
+}
+
+.icon {
+    position: relative;
+    left: 10px;
+    top: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+
+
+/* Формат футера*/
+
+footer {
+    clear: both;
+    position: relative;
+    left: 80px;
+    top: 90px;
+    width: 400px;
+    height: 35px;
+    
+}
+
+footer p {
+    font: 24px  Arial, Sans-Serif; 
+    color: black;
+    font-style: italic;
+    text-align: left;
+}

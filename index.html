@@ -24,24 +24,59 @@
                 <p>City: <span id="location" >Lviv</span></p>
             </div>
         </section>
-        <aside>
-            <div id="today">
+        <aside id="today">
+            <div class="day-today"> <p><span>Day:</span></p></div>
+            <div class="icon-today"> <p><span>Icon</span></p></div>
+            <div class="temp-today"> <p><span>T</span></p></div>
+            <div class="cond-today"> <p><span>Cond</span></span></p></div>
+            <div class="wind-today"> <p>Wind: <span></span></p></div>
+            <div class="hum-today"> <p>Humidity: <span></span></p></div>
+        </aside>
+        <section id="forecast">
+            <div id="day1">
                 <div class="day"> <p><span>Day:</span></p></div>
                 <div class="icon"> <p><span>Icon</span></p></div>
                 <div class="temp"> <p><span>T</span></p></div>
                 <div class="cond"> <p><span>Cond</span></span></p></div>
-                <div class="wind"> <p>Wind: <span></span></p></div>
-                <div class="hum"> <p>Humidity: <span></span></p></div>
             </div>
-        </aside>
-        <section>
-            <div id="next-week">
-                
+            <div id="day2">
+                <div class="day"> <p><span>Day:</span></p></div>
+                <div class="icon"> <p><span>Icon</span></p></div>
+                <div class="temp"> <p><span>T</span></p></div>
+                <div class="cond"> <p><span>Cond</span></span></p></div>
             </div>
+            <div id="day3">
+                <div class="day"> <p><span>Day:</span></p></div>
+                <div class="icon"> <p><span>Icon</span></p></div>
+                <div class="temp"> <p><span>T</span></p></div>
+                <div class="cond"> <p><span>Cond</span></span></p></div>
+            </div>
+            <div id="day4">
+                <div class="day"> <p><span>Day:</span></p></div>
+                <div class="icon"> <p><span>Icon</span></p></div>
+                <div class="temp"> <p><span>T</span></p></div>
+                <div class="cond"> <p><span>Cond</span></span></p></div>
+            </div>
+            
+           
+           
+           
+           
+           
+           
+            
+            
         </section>
         <footer>
-            
+            <p>&#169; <span id="date"><script src="scripts/year.js"></script></span>, Lahotskyy</p>
         </footer>
+
+       
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+        <script src="scripts/weatherService.js"></script>
+        <script src="scripts/weatherByCity.js"></script>
+        <script src="scripts/script.js"></script>
 
     </body>
 </html>
