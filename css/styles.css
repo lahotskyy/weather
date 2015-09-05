@@ -6,6 +6,8 @@
 body {
     font-family: 'Open+Sans', Oswald,  sans-serif;
     background: #969696;
+    height: 660px;
+    width: 100%;
     
 }
 
@@ -139,7 +141,7 @@ header div {
 /* Формат погодного вікна для наступного тижня */
 
 #forecast {
-    width: 1000px;
+    width: 850px;
     height: 400px;
     position: relative;
     left: 400px;
@@ -161,24 +163,51 @@ header div {
 
 .day {
     position: relative;
-    top: 30px;
-    font: 30px 'Open+Sans',  sans-serif;
+    top: 20px;
+    font: 20px Oswald,  sans-serif;
     text-align: center;
-    width: 140px;
-    height: 140px;
+    width: 180px;
+    height: 50px;
+}
+
+.temp{
+    position: relative;
+    left: 20px;
+    top: 40px;
+    width:160px;
+    height: 100px;
+    text-align: center;
+    font: 64px  Oswald,  sans-serif;
 }
 
 .icon {
     position: relative;
-    left: 10px;
+    left: 20px;
     top: 30px;
-    width: 100px;
+    width: 140px;
+    height: 100px;
+}
+
+#forecast  img {
+    width: 140px;
     height: 100px;
 }
 
 
+.cond {
+    position: relative;
+    left: 20px;
+    top: 40px;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    font: 18px Oswald,  sans-serif;
+}
 
-
+#day1:hover, #day2:hover, #day3:hover, #day4:hover {
+    box-shadow: 15px 15px 15px rgba(0,0,0,0.5);
+    background: rgba(236, 236, 236, 0.9);
+}
 
 
 /* Формат футера*/
@@ -187,15 +216,25 @@ footer {
     clear: both;
     position: relative;
     left: 80px;
-    top: 90px;
-    width: 400px;
+    top:-340px;
+    width: 700px;
     height: 35px;
     
 }
 
 footer p {
-    font: 24px  Arial, Sans-Serif; 
+    font: 18px  Oswald,  Sans-Serif; 
     color: black;
-    font-style: italic;
     text-align: left;
+}
+
+#contact a {
+    font: 18px  Oswald,  Sans-Serif; 
+    font-style: italic;
+    color: black;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: #5E5E5E;
 }

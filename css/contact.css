@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open+Sans', Oswald,  sans-serif;
+    background: #969696;
+    width: 460px;
+    height: 400px;
+    padding: 10px;
+}
+
+fieldset {
+    width: 450px;
+    height: 390px;
+    border-radius: 10px;
+}
+
+label, input {
+    font: 18px  'Open+Sans',  Sans-Serif; 
+    color: black;
+    text-align: left;
+    border-radius: 5px;
+}
+
+fieldset div {
+    position: relative;
+    left: 20px;
+    top: 20px;
+    width: 410px;
+    padding: 5px;
+}
+
+input[name='questions'] {
+    width: 410px;
+    height: 150px;
+}
+
+input[type='button']  {
+    padding: 5px 10px;
+    background: rgb(221, 221, 221);
+}
+
+input[type='button']:hover, #a-cancel:hover  {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    background: #CACACA;
+}
+#a-cancel {
+    display: block;
+    width: 100px;
+    border-radius: 5px;
+    padding: 5px;
+    font: 18px  'Open+Sans',  Sans-Serif; 
+    color: black;
+    text-decoration: none;
+    background: rgb(221, 221, 221);
+    border: 2px solid rgb(221, 221, 221);
+}
