@@ -44,6 +44,7 @@ header div {
     width: 150px;
     height: 35px;
     border-radius: 5px 0 0 5px;
+    background: #E5E5E5;
 }
 
 #search input[type="button"] {
@@ -93,7 +94,7 @@ header div {
 .day-today {
     position: relative;
     top: 30px;
-    font: 30px 'Open+Sans',  sans-serif;
+    font: 30px Oswald,  sans-serif;
     text-align: center;
     width: 300px;
     height: 40px;
@@ -112,25 +113,40 @@ header div {
     height: 100px;
 }
 
-.temp-today {
+.tempd-today {
     position: relative;
     left: 20px;
-    top: 30px;
+    top: 10px;
     width: 170px;
-    height: 100px;
+    height: 80px;
     text-align: center;
-    font: 64px 'Open+Sans',  sans-serif;
+    font: 72px Oswald,  sans-serif;
+}
+
+.tempn-today {
+    position: relative;
+    left: 120px;
+    top: 10px;
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    font: 48px Oswald,  sans-serif;
 }
 
 .cond-today, .wind-today, .hum-today {
     position: relative;
     left: 20px;
-    top: 30px;
+    top: 40px;
     width: 260px;
     height: 40px;
     text-align: left;
-    font: 18px 'Open+Sans',  sans-serif;
+    font: 24px Oswald,  sans-serif;
 }
+
+.cond-today:first-letter {
+    text-transform: uppercase;
+}
+
 
 #today:hover {
     transform: scale(1.1, 1.1);
@@ -146,8 +162,13 @@ header div {
     position: relative;
     left: 400px;
     top: -350px;
+    text-align: center;
+    vertical-align: middle;
 }
 
+#forecast h1 {
+    font: 120px  'Open+Sans',  sans-serif;;
+}
 
 #day {
     width: 200px;
@@ -164,26 +185,36 @@ header div {
 .day {
     position: relative;
     top: 20px;
-    font: 20px Oswald,  sans-serif;
+    font: 32px 'Open+Sans',  sans-serif;
     text-align: center;
     width: 180px;
     height: 50px;
 }
 
-.temp{
+.tempd{
     position: relative;
     left: 20px;
     top: 40px;
     width:160px;
-    height: 100px;
+    height: 80px;
     text-align: center;
-    font: 64px  Oswald,  sans-serif;
+    font: 64px  'Open+Sans',  sans-serif;
+}
+
+.tempn{
+    position: relative;
+    left: 20px;
+    top: 40px;
+    width:160px;
+    height: 50px;
+    text-align: center;
+    font: 32px  'Open+Sans',  sans-serif;
 }
 
 .icon {
     position: relative;
     left: 20px;
-    top: 30px;
+    top: 40px;
     width: 140px;
     height: 100px;
 }
@@ -201,7 +232,11 @@ header div {
     width: 160px;
     height: 40px;
     text-align: center;
-    font: 18px Oswald,  sans-serif;
+    font: 18px 'Open+Sans',  sans-serif;
+}
+
+.cond:first-letter {
+    text-transform: uppercase;
 }
 
 #day:hover {
@@ -223,13 +258,13 @@ footer {
 }
 
 footer p {
-    font: 18px  Oswald,  Sans-Serif; 
+    font: 18px  'Open+Sans',  Sans-Serif; 
     color: black;
     text-align: left;
 }
 
 #contact a {
-    font: 18px  Oswald,  Sans-Serif; 
+    font: 18px  'Open+Sans',  Sans-Serif; 
     font-style: italic;
     color: black;
     text-decoration: none;
