@@ -6,7 +6,6 @@ $(function(){
     });
     
     getWeatherData('en', dataReceived, showError);
-    
 
     function dataReceived(data) {
         var offset = (new Date()).getTimezoneOffset()*60*1000; // Відхилення від UTC  в мілісекундах
