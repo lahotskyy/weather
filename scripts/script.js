@@ -17,7 +17,7 @@ $(function(){
        /*  Weather for today */
         var localTime = new Date(data.list[0].dt*1000 - offset); // конвертуємо час з UTC у локальний
         $('#today-day').html(moment(localTime).format("DD MMM YY"));
-        $('#today-icon').html('<img src="images/icons/'+ ( (data.list[0].weather[0].icon === '10ddd')? '10d' : data.list[0].weather[0].icon) + '.png" />');
+        $('#today-icon').html('<img src="images/icons/'+ ( (data.list[0].weather[0].icon === '10ddd')? 'na' : data.list[0].weather[0].icon) + '.png" />');
         $('#today-tempd').html(Math.round(data.list[0].temp.day) + '&deg;C');
         $('#today-tempn').html(Math.round(data.list[0].temp.night) + '&deg;C');
         $('#today-cond').html(data.list[0].weather[0].description);
@@ -44,7 +44,7 @@ $(function(){
                 '<div class="tempd"> <p><span>' + tempd + '</span></p></div>' +
                 '<div class="tempn"> <p><span>' + tempn + '</span></p></div>' +
                 '<div class="icon"> <p><span>' + '<img src="images/icons/'+ 
-                  ( (icon === '10ddd')? '10d' : icon) // Fix in case if server returns unknown icon 10ddd 
+                  ( (icon === '10ddd')? 'na' : icon) // Fix in case if server returns unknown icon 10ddd 
                   + '.png" />' + '</span></p></div>' +
                 '<div class="cond"> <p><span>' + condition + '</span></span></p></div>' +
                 '</div>';
