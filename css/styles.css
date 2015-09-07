@@ -274,17 +274,17 @@ footer p {
 }
 
 .rain {
-    background: url(/images/rain.jpg) no-repeat; 
+    background: url(images/rain.jpg) no-repeat; 
 }
 
 .cloud {
-    background: url(/images/cloud.jpg) no-repeat; 
+    background: url(images/cloud.jpg) no-repeat; 
 }
 
 .sun {
-    background: url(/images/sun.jpg) no-repeat; 
+    background: url(images/sun.jpg) no-repeat; 
 }
 
 .frost {
-    background: url(/images/frost.jpg) no-repeat; 
+    background: url(images/frost.jpg) no-repeat; 
 }
