@@ -22,7 +22,8 @@ $(function(){
         $('#today-cond').html(data.list[0].weather[0].description);
         $('#today-wind').html(Math.round(data.list[0].speed) + 'm/s');
         $('#today-hum').html(data.list[0].humidity + '%');
-           
+        background_img (data.list[0].weather[0].icon); 
+         
         /*  Weather for next 4 days */  
          $('#forecast').empty();
         for (var i = 1; i < 5; i++) {
@@ -48,6 +49,22 @@ $(function(){
                 '<div class="cond"> <p><span>' + condition + '</span></span></p></div>' +
                 '</div>';
          $('#forecast').append(markup); 
+    }
+    
+    function background_img(icon) {
+        if (icon === '09d' || icon === '10d' || icon === '11d' || icon === '09n' || icon === '10n' || icon === '11n') { 
+            $('#body').removeClass().addClass('rain');
+            return; 
+        } else  if (icon === '01d' || icon === '01n' || icon === '10ddd' || icon === 'na') {
+                    $('#body').removeClass().addClass('sun');
+                    return; 
+                } else  if (icon === '02d' || icon === '03d' || icon === '04d' || icon === '02n' || icon === '03n' || icon === '04n' || icon === '50d' || icon === '50n') {
+                            $('#body').removeClass().addClass('cloud');
+                            return;
+                        } else  if (icon === '13d' || icon === '13n') {
+                                    $('#body').removeClass().addClass('frost');
+                                    return;
+                                };
     }
 
     function showError(msg){

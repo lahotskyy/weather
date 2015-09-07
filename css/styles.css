@@ -6,10 +6,13 @@
 body {
     font-family: 'Open+Sans', Oswald,  sans-serif;
     background: #969696;
-    height: 660px;
+    height: 100%;
     width: 100%;
-    
+    background-size: cover;
+    z-index: -1;
+    opacity : 0.9;
 }
+
 
 header {
     width: auto;
@@ -70,8 +73,6 @@ header div {
     font: 36px 'Open+Sans',  sans-serif;
     color: black;
 }
-
-
 
 /* Формат погодного вікна для поточної дати */
 
@@ -147,7 +148,6 @@ header div {
     text-transform: uppercase;
 }
 
-
 #today:hover {
     transform: scale(1.1, 1.1);
     box-shadow: 15px 15px 15px rgba(0,0,0,0.5);
@@ -180,7 +180,6 @@ header div {
     display: inline-block;
     left: 20px;
 }
-
 
 .day {
     position: relative;
@@ -272,4 +271,20 @@ footer p {
 
 #contact a:hover {
     color: #5E5E5E;
+}
+
+.rain {
+    background: url(/images/rain.jpg) no-repeat; 
+}
+
+.cloud {
+    background: url(/images/cloud.jpg) no-repeat; 
+}
+
+.sun {
+    background: url(/images/sun.jpg) no-repeat; 
+}
+
+.frost {
+    background: url(/images/frost.jpg) no-repeat; 
 }
